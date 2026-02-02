@@ -178,6 +178,8 @@ tom_skype = users["Tom"].get("skype", "Undefined")
 | **Доступ** | `d[key]` | `value = d["a"]` | Получение значения (KeyError если нет) |
 | | `d.get(key)` | `value = d.get("a")` | Безопасное получение (None если нет) |
 | | `d.get(key, default)` | `value = d.get("c", 0)` | Со значением по умолчанию |
+| | `d.setdefault(key)` | `value = d.setdefault("c")` | Возвращает значение, если ключ есть, иначе добавляет ключ со значением `None` |
+| | `d.setdefault(key, default)` | `value = d.setdefault("c", 0)` | Возвращает значение, если ключ есть, иначе добавляет ключ с указанным значением |
 | **Проверка** | `key in d` | `if "a" in d:` | Проверка наличия ключа |
 | | `key not in d` | `if "z" not in d:` | Проверка отсутствия ключа |
 | **Добавление/Изменение** | `d[key] = value` | `d["c"] = 3` | Добавление или изменение |
